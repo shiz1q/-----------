@@ -65,7 +65,7 @@
   grid-template-columns: 31% 23% 23% 23%;
 }
 .wrapper .welcomePartMain {
-  /* background-color: var(--main-color); */
+
 }
 .welcomePart {
   transition: 500ms;
