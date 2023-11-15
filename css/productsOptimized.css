@@ -1,0 +1,31 @@
+/* Пример медиа-запроса для устройств с маленькими экранами (мобильные устройства) */
+@media screen and (max-width: 768px) {
+    /* Здесь применяются стили для мобильных устройств */
+    .wrapper nav ul {
+            padding: 20px;
+            font-size: 16px;
+        }
+    .wrapperGrid{
+        display: block;
+        
+    }
+        .welcomePart .Info h1{
+            font-size: 16px;
+        }
+        .modal-window>div{
+            width: 500px;
+        }
+        .products{
+            grid-template-columns: 50% 50%;
+        }
+}
+
+/* Пример медиа-запроса для устройств с планшетными экранами */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Здесь применяются стили для планшетных устройств */
+}
+
+/* Пример медиа-запроса для устройств с высоким разрешением (например, ноутбуки и десктопы) */
+@media screen and (min-width: 1024px) {
+    /* Здесь применяются стили для устройств с высоким разрешением */
+}

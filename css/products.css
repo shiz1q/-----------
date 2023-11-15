@@ -9,7 +9,6 @@
 .wrapper {
   position: relative;
   border-color: black;
-      overflow: hidden;
 }
 .wrapper nav {
   position: absolute;
