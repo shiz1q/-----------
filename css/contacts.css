@@ -1,0 +1,58 @@
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#383838;
+}
+.wrapper {
+    position: relative;
+    justify-content: center;
+}
+.wrapper nav {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.wrapper nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.wrapper nav ul div {
+    display: flex;
+}
+
+.wrapper nav ul div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.wrapper nav ul div a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.contacts{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    width: 800px;
+    height: 700px;
+    background-color: white;
+    border-radius: 10px;
+}
+.cont h1{
+    text-align: center;
+}

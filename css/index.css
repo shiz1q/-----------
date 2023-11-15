@@ -1,0 +1,154 @@
+/* Colors */
+:root {
+  --main-color: rgb(56, 56, 56);
+}
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  position: relative;
+}
+.TextAndButton {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 400px;
+}
+.TextAndButton h1 {
+  width: 550px;
+  font-size: 80px;
+  color: white;
+}
+.TextAndButton p {
+  width: 200px;
+  color: rgba(255, 255, 255, 0.521);
+  margin-top: 20px;
+}
+.TextAndButton a {
+  color: white;
+  text-decoration: none;
+}
+.wrapper nav {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.wrapper nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  font-size: 20px;
+  list-style: none;
+}
+.wrapper nav ul div {
+  display: flex;
+}
+.wrapper nav ul div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.wrapper nav ul div a {
+  color: white;
+  text-decoration: none;
+}
+.wrapperGrid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 31% 23% 23% 23%;
+}
+.wrapper .welcomePartMain {
+  background-color: var(--main-color);
+}
+.welcomePart {
+  transition: 500ms;
+}
+.welcomePart .Info {
+  margin-top: -80px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .welcomePart img {
+  width: 100%;
+  height: 100%;
+}
+.welcomePart:hover {
+  opacity: 0.9;
+  transition: 500ms;
+}
+/* CSS */
+button {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button::after,
+button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+button::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+button::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+button:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+button:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+button:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}

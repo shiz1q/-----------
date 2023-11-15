@@ -1,0 +1,309 @@
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+.wrapper {
+  position: relative;
+  border-color: black;
+      overflow: hidden;
+}
+.wrapper nav {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+.wrapper nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  font-size: 20px;
+  list-style: none;
+}
+.wrapper nav ul div {
+  display: flex;
+}
+.wrapper nav ul div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.wrapper nav ul div a {
+  color: white;
+  text-decoration: none;
+}
+
+.wrapperGrid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.wrapper .welcomePartMain {
+  background-color: var(--main-color);
+}
+.welcomePart {
+  transition: 500ms;
+}
+.welcomePart .Info {
+  margin-top: -80px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .welcomePart img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 1000px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+  color: black;
+}
+.modal-window header {
+  font-weight: bold;
+}
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+
+/* Demo Styles */
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-window > div {
+  border-radius: 1rem;
+}
+
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.logo {
+  max-width: 150px;
+  display: block;
+}
+
+small {
+  color: lightgray;
+}
+
+.btn {
+  background-color: white;
+  padding: 2px;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: black;
+  transition: 500ms;
+}
+.btn i {
+  padding-right: 0.3em;
+}
+.btn:hover{
+  opacity: 0.5;
+}
+.products {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  overflow-y: scroll;
+}
+.products .prodIMG {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.products .prodIMG img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 500ms;
+}
+.pop-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 3;
+}
+.pop-up img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.pop-up span {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  justify-content: 40px;
+  background: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+.pop-up1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 3;
+}
+
+.pop-up1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.pop-up1 span {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  justify-content: 40px;
+  background: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+ .prodIMG1 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+ .prodIMG1 img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.pop-up2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 3;
+}
+
+.pop-up2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.pop-up2 span {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  justify-content: 40px;
+  background: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prodIMG2 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.prodName{
+  position: absolute;
+  background-color: white;
+  width: 100px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.prodPrice{
+  position: absolute;
+  top: 20px;
+  background-color: white;
+    width: 100px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: green;
+}
+
+.prodIMG2 img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 500ms;
+}
