@@ -15,18 +15,23 @@
 .TextAndButton {
   position: absolute;
   top: 50%;
-  left: 17%;
+  left: 17px;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 3;
-  width: 400px;
+  /* width:600px; */
 }
 .TextAndButton h1 {
   width: 550px;
+  text-align: center;
   font-size: 80px;
   color: white;
 }
 .TextAndButton p {
-  width: 200px;
+  text-align: center;
+  width:550px;
   color: rgba(255, 255, 255, 0.521);
   margin-top: 20px;
 }
