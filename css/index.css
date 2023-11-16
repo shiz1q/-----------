@@ -12,39 +12,34 @@
 .wrapper {
   position: relative;
 }
-.TextAndButton {
-  position: absolute;
-  top: 50%;
-  left: 17px;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 3;
-  /* width:600px; */
-}
-.TextAndButton h1 {
-  width: 550px;
-  text-align: center;
-  font-size: 80px;
-  color: white;
-}
-.TextAndButton p {
-  text-align: center;
-  width:550px;
-  color: rgba(255, 255, 255, 0.521);
-  margin-top: 20px;
-}
-.TextAndButton a {
-  color: white;
-  text-decoration: none;
-}
 .wrapper nav {
   position: absolute;
   width: 100%;
   z-index: 3;
 }
+.TextAbout{
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 500px;
+  z-index: 3;
+}
+.TextAbout h1{
+  font-size: 80px;
+  width: 500px;
+  color: white;
+}
+.TextAbout p{
 
+  font-size: 20px;
+  width: 300px;
+    color: gray;
+}
 .wrapper nav ul {
   display: flex;
   justify-content: space-between;
