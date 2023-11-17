@@ -16,6 +16,31 @@
     .welcomePart {
         display: block;
     }
+        .TextAbout {
+            position: absolute;
+            text-align: center;
+            top: 35%;
+            left: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 300px;
+            z-index: 3;
+        }
+    
+        .TextAbout h1 {
+            font-size: 50px;
+            width: 300px;
+            color: white;
+        }
+    
+        .TextAbout p {
+    
+            font-size: 20px;
+            width: 300px;
+            color: gray;
+        }
 }
 
 /* Media Query для остальных экранов (планшеты, десктопы) от 751px */
